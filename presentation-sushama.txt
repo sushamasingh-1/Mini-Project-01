@@ -1,17 +1,15 @@
 What is an object-oriented programming language?
 Answer:-
 An object-oriented programming language is a programming language that represents the elements of a problem as objects, which contain data and behavior
-
-================
+====================================================
    -Difference between class and object?
 class:-
 Class is used as a template for declaring and creating the objects.
 Object:-
 An object is an instance of a class.
-=================
+====================================================
 -What are OOPS concepts?
 OOPs Concepts are as follows: 
-
 Class
 Object 
 Method and method passing
@@ -21,5 +19,16 @@ Inheritance
 Polymorphism-
  Compile-time polymorphism
  Run-time polymorphis
-===================   
+=====================================================
 -Write steps to create a project, package, class and interface in the eclipse
+Steps:
+1.Project:
+	a.Go to file->new->project, search for java project
+	b.select java project and click on next, give a project name and click on finish 
+2.Package:
+	a.Expand the project in package explorer, right click on src, go to new and selct package, give a name to package and
+ 	 click on finish.
+3.Class:
+	a.Right click on package, go to new and select class, give a name to the class and click on finish.
+4.Interface:
+	a.Right click on package, go to new and select interface, give a name to the interface and click on finish.
