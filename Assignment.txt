@@ -1,1 +1,11 @@
-TO
+1. Create a branch branch-[your-name] from https://github.com/sushamasingh-1/Mini-Project-01.git
+2. Clone newly create branch to your local machine
+3. Create a file presentation-[your-name].txt file
+   -Write answers to the questions below in the file
+   -What is an object-oriented programming language?
+   -Difference between class and object?
+   -What are OOPS concepts?
+   -Write steps to create a project, package, class and interface in the eclipse
+4. Commit the changes to your branch
+5. Push your branch's changes from your local machine to remote repository
+6. Create a pull(merge) request from your branch to master branch
