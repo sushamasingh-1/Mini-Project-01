@@ -1,0 +1,89 @@
+1. what is ddl?
+ans:-The present database industry incorporates DDL into any formal language describing data.
+ However, it is considered to be a subset of SQL (Structured Query Language).
+ SQL often uses imperative verbs with normal English such as sentences to implement database modifications.
+ Hence, DDL does not show up as a different language in an SQL database, but does define changes in the database schema.
+
+It is used to establish and modify the structure of objects in a database by dealing with descriptions of the database schema.
+ Unlike data manipulation language (DML) commands that are used for data modification purposes, 
+DDL commands are used for altering the database structure such as creating new tables or objects along with all their attributes (data type, table name, etc.).
+
+
+ 2.what is dml?
+ans:-DML resembles simple English language and enhances efficient user interaction with the system.
+ The functional capability of DML is organized in manipulation commands like SELECT, UPDATE, INSERT INTO and DELETE FROM, as described below:
+
+SELECT: This command is used to retrieve rows from a table. The syntax is SELECT [column name(s)] from [table name] where [conditions].
+ SELECT is the most widely used DML command in SQL.
+
+UPDATE: This command modifies data of one or more records.
+ An update command syntax is UPDATE [table name] SET [column name = value] where [condition].
+
+INSERT: This command adds one or more records to a database table.
+ The insert command syntax is INSERT INTO [table name] [column(s)] VALUES [value(s)].
+
+DELETE: This command removes one or more records from a table according to specified conditions.
+ Delete command syntax is DELETE FROM [table name] where [condition].
+
+what is dql?
+ans:-
+DQL commands are basically SELECT statements.
+ SELECT statements let you query the database to find information in one or more tables, and return the query as a result set.
+ A result set is an array structure; or more precisely, a result set is a two-dimensional array.
+ The internal index for each row of data is the rowid pseudo-column, which maps to the physical address for where the data is written.
+
+difference  between delet and truncate.
+ans:-Drop-A drop command is used to delete objects such as a table, index or view.
+ A DROP statement cannot be rolled back, so once an object is destroyed, there’s no way to recover it.
+
+Drop statement syntax is:
+
+DROP object type object name;
+
+For example:
+
+DROP TABLE Employee;
+
+In this example, we’re deleting the Employee table.
+
+Truncate-Similar to DROP, the TRUNCATE statement is used to quickly remove all records from a table.
+ However, unlike DROP that completely destroys a table, TRUNCATE preserves its full structure to be reused later.
+
+Truncate statement syntax is:
+
+TRUNCATE TABLE table_name;
+
+For example:
+
+TRUNCATE TABLE Employee;
+
+In this example, we’re marking all the extents of the Employee table for deallocation, so they’re considered empty for reuse.
+
+Difference between table and field.
+ans:- Table-A table is a set of data that are organized in a model with Columns and Rows.
+ Columns can be categorized as vertical, and Rows are horizontal.
+ A table has specified number of column called fields but can have any number of rows which is called record.
+Example:.
+Table: Employee.
+
+
+Field-Tables contain rows and columns, where the rows are known as records and the columns are known as fields.
+ A column is a set of data values of a particular type (like numbers or alphabets), one value for each row of the database.
+ for example, Age, Student_ID, or Student_Name,etc.
+
+difference between table and view.
+ans:-Table-A table is a set of data that are organized in a model with Columns and Rows.
+ Columns can be categorized as vertical, and Rows are horizontal.
+ A table has specified number of column called fields but can have any number of rows which is called record.
+Example:.
+Table: Employee.
+
+
+View-A view is a subset of a database that is generated from a user query and gets stored as a permanent object. In a structured query language (SQL) database.
+ for example, a view becomes a type of virtual table with filtered rows and columns that mimic those of the original database.
+
+what is alias.
+ans:-SQL aliases are used to give a table, or a column in a table, a temporary name.
+Aliases are often used to make column names more readable.
+An alias only exists for the duration of that query.
+An alias is created with the AS keyword.
