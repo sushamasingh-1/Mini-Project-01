@@ -1,0 +1,147 @@
+Q.) What is DDL, DML, DQL, TCL and DCL?
+	DDL (Data Definition Language)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	DDL or Data definition language is actually the definition or description of the database 
+	structure or schema, it won't change the data inside the database. Create, modify, and delete 
+	the database structures, but not the data.
+	
+	1.) CREATE
+	__________
+
+	Create the database or its object (ie table, index, view, function etc.).
+	Syntax
+	__________
+	
+	CREATE DATABASE databasename
+
+	2.) DROP
+	Drop command helps to delete the object from the database (ie table, index, view, function, etc.).
+	
+	Syntax
+	DROP object object_name
+
+	3.)ALTER
+	Alter command is helpful to change or modify the structure of the database or its object.
+	
+	Syntax
+	ALTER TABLE table_name
+	ADD column_name datatype
+
+	DML(Data Manipulation Language)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	DML or Data Manipulation Language is to manipulate the data inside the database. With the help of DML
+	 commands, we can insert, delete, change the data inside the database.
+
+	1.) INSERT
+	Insert command is helpful to insert the data into a table.
+
+	Syntax
+	INSERT INTO table_name (column1, column2, column3, ...)
+	VALUES (value1, value2, value3, ...)
+
+	2.) UPDATE
+
+	Update command is helpful to update the existing data in a table.
+
+	Syntax
+
+	UPDATE table_name
+	SET column1 = value1, column2 = value2, ...
+	WHERE condition
+
+	3.) DELETE
+
+	Delete command helps to delete the records from a database table.
+
+	Syntax
+	DELETE FROM table_name WHERE condition;
+
+	4.) LOCK 
+	Lock command is helpful to lock the table to control concurrency.
+
+	Syntax
+	LOCK TABLE table-Name IN { SHARE | EXCLUSIVE } MODE
+
+
+	DQL (Data Query Language)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	DQL or data query language is to perform the query on the data inside the schema or object
+	 (ie table, index, view, function, etc). With the help of DQL query we can get the data from 
+	the database to perform actions or operations like analysing the data. 
+
+	SELECT
+	Select query on a table or tables to view the temporary table output from the database.
+
+	Syntax
+	Select * from Table_Name;
+
+
+	DCL (Data Control Language)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	DCL or Data Control Language is to provide rights, permissions, and other controls of the database system. 
+
+	1.)  GRANT
+	GRANT command is helpful to provide privileges to the database.
+
+	Syntax
+	GRANT privileges_names ON object TO user
+
+	TCL (Transaction Control Language)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	TCL or Transaction Control Language happens to a transaction in the database.
+
+	1.) COMMIT
+	Commit command is to commit Transaction after insert or delete in the database.
+
+	Syntax
+	Commit;
+
+	3.) ROLLBACK 
+	Rollback command is to rollback a transaction in case of any error occurs.
+
+	Syntax
+	Rollback;
+
+
+
+Q.)	Difference between Delete and Truncate?
+ANS:-  DELETE
+	1.)The delete statement is used to remove single or multiple records from an existing table
+	 depending on the specified condition.
+	2.)It is a DML (Data Manipulation Language) command.
+	3.)It allows us to restore the deleted data by using the COMMIT or ROLLBACK statement.
+
+	TRUNCATE
+	1.) The truncate command removes the complete data from an existing table but not the table 
+	    itself. It preserves the table structure or schema.
+	2.) It is a DDL (Data Definition Language) command.
+	3.) We cannot restore the deleted data after using executing this command.
+
+Q.)	Difference between Delete and Drop?
+	DELETE
+	1.)The delete statement is used to remove single or multiple records from an existing table
+	 depending on the specified condition.
+	2.)It is a DML (Data Manipulation Language) command.
+	
+	DROPE
+	1.)DROP Command, removes named elements of schema like relations/table, constraints or entire schema.
+	2.)It is a DDL (Data Definition Language) command.
+
+Q.)	Difference between Table and Field?
+ANS:- A table has records (rows) and fields (columns). Fields have different types of data, such as text, numbers,
+	 dates, and hyperlinks.
+
+Q.)	Difference between Table and View?
+ANS:- 1.)A table is a database object that holds information used in applications and reports. On the other hand,
+	 a view is also a database object utilized as a table and can also link to other tables.
+	
+	2.)A table consists of rows and columns to store and organized data in a structured format, while the view is
+	 a result set of SQL statements.
+
+	3.)A table is structured with columns and rows, while a view is a virtual table extracted from a database.
+
+	4.)The table is an independent data object while views are usually depending on the table.
+
+Q.)	What is Alias?
+ANS:-	SQL aliases are used to give a table, or a column in a table, a temporary name. Aliases are often used to make 
+	column names more readable. An alias only exists for the duration of that query. An alias is created with the AS keyword.
